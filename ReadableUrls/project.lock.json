@@ -1143,41 +1143,6 @@
           "lib/dnx451/Microsoft.Framework.Configuration.Ini.dll": {}
         }
       },
-      "Microsoft.Framework.Configuration.Json/1.0.0-beta5": {
-        "dependencies": {
-          "Newtonsoft.Json": "6.0.6",
-          "Microsoft.Framework.Configuration": "1.0.0-beta5"
-        },
-        "frameworkAssemblies": [
-          "mscorlib",
-          "System",
-          "System.Core",
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "lib/dnx451/Microsoft.Framework.Configuration.Json.dll": {}
-        },
-        "runtime": {
-          "lib/dnx451/Microsoft.Framework.Configuration.Json.dll": {}
-        }
-      },
-      "Microsoft.Framework.Configuration.UserSecrets/1.0.0-beta5": {
-        "dependencies": {
-          "Microsoft.Framework.Configuration.Json": "1.0.0-beta5"
-        },
-        "frameworkAssemblies": [
-          "mscorlib",
-          "System",
-          "System.Core",
-          "Microsoft.CSharp"
-        ],
-        "compile": {
-          "lib/dnx451/Microsoft.Framework.Configuration.UserSecrets.dll": {}
-        },
-        "runtime": {
-          "lib/dnx451/Microsoft.Framework.Configuration.UserSecrets.dll": {}
-        }
-      },
       "Microsoft.Framework.DependencyInjection/1.0.0-beta5": {
         "dependencies": {
           "Microsoft.Framework.DependencyInjection.Abstractions": "1.0.0-beta5"
@@ -1437,7 +1402,6 @@
           "lib/portable-net45+win8+wp8+wpa81/System.Collections.Immutable.dll": {}
         }
       },
-      "System.Linq/4.0.0-beta-23019": {},
       "System.Reflection.Metadata/1.0.21": {
         "dependencies": {
           "System.Collections.Immutable": "1.1.36"
@@ -1449,17 +1413,7 @@
           "lib/portable-net45+win8/System.Reflection.Metadata.dll": {}
         }
       },
-      "System.Runtime/4.0.10-beta-23019": {},
-      "System.Threading/4.0.10-beta-23019": {
-        "dependencies": {
-          "System.Runtime": "4.0.0-beta-23019",
-          "System.Threading.Tasks": "4.0.0-beta-23019"
-        },
-        "compile": {
-          "ref/dotnet/System.Threading.dll": {}
-        }
-      },
-      "System.Threading.Tasks/4.0.0-beta-23019": {}
+      "System.Runtime/4.0.0-beta-23019": {}
     },
     "DNXCore,Version=v5.0": {
       "EntityFramework.Core/7.0.0-beta5": {
@@ -2471,31 +2425,6 @@
           "lib/dotnet/Microsoft.Framework.Configuration.Ini.dll": {}
         }
       },
-      "Microsoft.Framework.Configuration.Json/1.0.0-beta5": {
-        "dependencies": {
-          "Newtonsoft.Json": "6.0.6",
-          "Microsoft.Framework.Configuration": "1.0.0-beta5",
-          "System.Dynamic.Runtime": "4.0.10-beta-23019"
-        },
-        "compile": {
-          "lib/dotnet/Microsoft.Framework.Configuration.Json.dll": {}
-        },
-        "runtime": {
-          "lib/dotnet/Microsoft.Framework.Configuration.Json.dll": {}
-        }
-      },
-      "Microsoft.Framework.Configuration.UserSecrets/1.0.0-beta5": {
-        "dependencies": {
-          "Microsoft.Framework.Configuration.Json": "1.0.0-beta5",
-          "System.Runtime": "4.0.20-beta-23019"
-        },
-        "compile": {
-          "lib/dnxcore50/Microsoft.Framework.Configuration.UserSecrets.dll": {}
-        },
-        "runtime": {
-          "lib/dnxcore50/Microsoft.Framework.Configuration.UserSecrets.dll": {}
-        }
-      },
       "Microsoft.Framework.DependencyInjection/1.0.0-beta5": {
         "dependencies": {
           "Microsoft.Framework.DependencyInjection.Abstractions": "1.0.0-beta5",
@@ -3413,6 +3342,11 @@
           "lib/DNXCore50/System.Private.Networking.dll": {}
         }
       },
+      "System.Private.Uri/4.0.0-beta-23019": {
+        "runtime": {
+          "lib/DNXCore50/System.Private.Uri.dll": {}
+        }
+      },
       "System.Reflection/4.0.10-beta-23019": {
         "dependencies": {
           "System.Runtime": "4.0.20-beta-23019",
@@ -3513,9 +3447,15 @@
           "lib/DNXCore50/System.Resources.ResourceManager.dll": {}
         }
       },
-      "System.Runtime/4.0.10-beta-23019": {
+      "System.Runtime/4.0.20-beta-23019": {
+        "dependencies": {
+          "System.Private.Uri": "4.0.0-beta-23019"
+        },
         "compile": {
           "ref/dotnet/System.Runtime.dll": {}
+        },
+        "runtime": {
+          "lib/DNXCore50/System.Runtime.dll": {}
         }
       },
       "System.Runtime.Extensions/4.0.10-beta-23019": {
@@ -4843,34 +4783,6 @@
         "lib/net45/Microsoft.Framework.Configuration.Ini.xml"
       ]
     },
-    "Microsoft.Framework.Configuration.Json/1.0.0-beta5": {
-      "serviceable": true,
-      "sha512": "oEfKwn889qloLLaz89X3Gvh4tcPeHHrqyQlAtmYHrzfE3EakkV3g8pBMIL8s26G8pIOfSaLyK3MMMqD7nxYMPA==",
-      "files": [
-        "Microsoft.Framework.Configuration.Json.1.0.0-beta5.nupkg",
-        "Microsoft.Framework.Configuration.Json.1.0.0-beta5.nupkg.sha512",
-        "Microsoft.Framework.Configuration.Json.nuspec",
-        "lib/dnx451/Microsoft.Framework.Configuration.Json.dll",
-        "lib/dnx451/Microsoft.Framework.Configuration.Json.xml",
-        "lib/dotnet/Microsoft.Framework.Configuration.Json.dll",
-        "lib/dotnet/Microsoft.Framework.Configuration.Json.xml",
-        "lib/net45/Microsoft.Framework.Configuration.Json.dll",
-        "lib/net45/Microsoft.Framework.Configuration.Json.xml"
-      ]
-    },
-    "Microsoft.Framework.Configuration.UserSecrets/1.0.0-beta5": {
-      "serviceable": true,
-      "sha512": "GIRmkH8Ab4ntksZbGTRQGT3ZgxYA3byk/753sHsP6qRIxdXt5PedRvgKRGW+qQQ15xye5yUvBDVrjqR/qd96dA==",
-      "files": [
-        "Microsoft.Framework.Configuration.UserSecrets.1.0.0-beta5.nupkg",
-        "Microsoft.Framework.Configuration.UserSecrets.1.0.0-beta5.nupkg.sha512",
-        "Microsoft.Framework.Configuration.UserSecrets.nuspec",
-        "lib/dnx451/Microsoft.Framework.Configuration.UserSecrets.dll",
-        "lib/dnx451/Microsoft.Framework.Configuration.UserSecrets.xml",
-        "lib/dnxcore50/Microsoft.Framework.Configuration.UserSecrets.dll",
-        "lib/dnxcore50/Microsoft.Framework.Configuration.UserSecrets.xml"
-      ]
-    },
     "Microsoft.Framework.DependencyInjection/1.0.0-beta5": {
       "serviceable": true,
       "sha512": "Jau27ULONglLGNu4FAwk7XjC3JXB4LsSWb8QsSlCotiJmOXHG7x+MEVz0nAgmFFkN2VGjFjK0Klnz0z9aDaBaw==",
@@ -5623,6 +5535,19 @@
         "ref/netcore50/_._"
       ]
     },
+    "System.Private.Uri/4.0.0-beta-23019": {
+      "sha512": "LV9WVCQ8W3ivP/hvQlaHH0lZKZyoYcUYiRGVw7xw/q8yfo2ZvwIrleXcLemxQkCSrXy80c5QmT9ErvrlFQK+Nw==",
+      "files": [
+        "System.Private.Uri.4.0.0-beta-23019.nupkg",
+        "System.Private.Uri.4.0.0-beta-23019.nupkg.sha512",
+        "System.Private.Uri.nuspec",
+        "lib/DNXCore50/System.Private.Uri.dll",
+        "lib/netcore50/System.Private.Uri.dll",
+        "ref/dnxcore50/_._",
+        "ref/netcore50/_._",
+        "runtimes/win8-aot/lib/netcore50/System.Private.Uri.dll"
+      ]
+    },
     "System.Reflection/4.0.10-beta-23019": {
       "sha512": "74fA068GDGipNfZxV3cQJe38djfHNrHPbKRrojOCLoecymaXlTGU917/nVxBuRwFehOsYwhMJ/B30m4YVEF/CA==",
       "files": [
@@ -5740,19 +5665,33 @@
         "runtimes/win8-aot/lib/netcore50/System.Resources.ResourceManager.dll"
       ]
     },
-    "System.Runtime/4.0.10-beta-23019": {
-      "sha512": "yZZc2OMujDOirzMus09Og7DtGdz8Uj/zMtVRvouNSo1QQ68KV9iYjXMJJ48Jhv6DYsmH1vGEbL98NVFEHcrpqA==",
+    "System.Runtime/4.0.0-beta-23019": {
+      "sha512": "BUB/5CSzjDRQlifthFztT1eWmnnb2QCK2WKd0kxAt8ytB+2oXiVqpSvcbtzRsidp8wGdG51fyolfiznodSIX9A==",
       "files": [
         "License.rtf",
-        "System.Runtime.4.0.10-beta-23019.nupkg",
-        "System.Runtime.4.0.10-beta-23019.nupkg.sha512",
+        "System.Runtime.4.0.0-beta-23019.nupkg",
+        "System.Runtime.4.0.0-beta-23019.nupkg.sha512",
         "System.Runtime.nuspec",
-        "lib/net451/_._",
-        "lib/win81/_._",
+        "lib/net45/_._",
+        "lib/win8/_._",
         "ref/dotnet/System.Runtime.dll",
-        "ref/net451/_._",
+        "ref/net45/_._",
         "ref/netcore50/System.Runtime.dll",
-        "ref/win81/_._"
+        "ref/win8/_._"
+      ]
+    },
+    "System.Runtime/4.0.20-beta-23019": {
+      "sha512": "74Ba0KeqUX4ziLuALD5zSDWbYFg2Hw8IloKILkm8UHe5vkFCzHIb9tARXLClDjTxXQ/G/hyXgV8N0YlKHX7dAA==",
+      "files": [
+        "System.Runtime.4.0.20-beta-23019.nupkg",
+        "System.Runtime.4.0.20-beta-23019.nupkg.sha512",
+        "System.Runtime.nuspec",
+        "lib/DNXCore50/System.Runtime.dll",
+        "lib/net46/_._",
+        "lib/netcore50/System.Runtime.dll",
+        "ref/dotnet/System.Runtime.dll",
+        "ref/net46/_._",
+        "runtimes/win8-aot/lib/netcore50/System.Runtime.dll"
       ]
     },
     "System.Runtime.Extensions/4.0.10-beta-23019": {
@@ -6050,21 +5989,6 @@
         "ref/net46/System.Threading.Overlapped.dll"
       ]
     },
-    "System.Threading.Tasks/4.0.0-beta-23019": {
-      "sha512": "frcOMzzaVN9AHhlJRLKOqm9WHws2byLa+CDFUZIQzUWqrpubH0CDtNj1je5lJpD1QDwJBmnXepKUXCwt/wt9Ew==",
-      "files": [
-        "License.rtf",
-        "System.Threading.Tasks.4.0.0-beta-23019.nupkg",
-        "System.Threading.Tasks.4.0.0-beta-23019.nupkg.sha512",
-        "System.Threading.Tasks.nuspec",
-        "lib/net45/_._",
-        "lib/win8/_._",
-        "ref/dotnet/System.Threading.Tasks.dll",
-        "ref/net45/_._",
-        "ref/netcore50/System.Threading.Tasks.dll",
-        "ref/win8/_._"
-      ]
-    },
     "System.Threading.Tasks/4.0.10-beta-23019": {
       "sha512": "drgS00Han7hhU1Wpw8aVCrVrZxaSlHddAsHZTomgZqDioG3IFblN09RMeNtaL4m5DLHt+cuzyvNFKUMdjxiklg==",
       "files": [
@@ -6164,9 +6088,6 @@
   "projectFileDependencyGroups": {
     "": [
       "System.Collections >= 4.0.10-beta-23019",
-      "System.Linq >= 4.0.0-beta-23019",
-      "System.Threading >= 4.0.10-beta-23019",
-      "System.Runtime >= 4.0.10-beta-23019",
       "Microsoft.CSharp >= 4.0.0-beta-23019",
       "Microsoft.AspNet.Mvc >= 6.0.0-beta5",
       "Microsoft.AspNet.Mvc.TagHelpers >= 6.0.0-beta5",
@@ -6181,10 +6102,7 @@
       "Microsoft.AspNet.Server.IIS >= 1.0.0-beta5",
       "Microsoft.AspNet.Server.WebListener >= 1.0.0-beta5",
       "Microsoft.AspNet.StaticFiles >= 1.0.0-beta5",
-      "Microsoft.AspNet.Tooling.Razor >= 1.0.0-beta5",
-      "Microsoft.Framework.Configuration.Abstractions >= 1.0.0-beta5",
-      "Microsoft.Framework.Configuration.Json >= 1.0.0-beta5",
-      "Microsoft.Framework.Configuration.UserSecrets >= 1.0.0-beta5"
+      "Microsoft.AspNet.Tooling.Razor >= 1.0.0-beta5"
     ],
     "DNX,Version=v4.5.1": [],
     "DNXCore,Version=v5.0": []

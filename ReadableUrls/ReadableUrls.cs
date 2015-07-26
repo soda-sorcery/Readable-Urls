@@ -1,10 +1,8 @@
 ﻿using Microsoft.AspNet.Builder;
 using Microsoft.AspNet.Http;
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text.RegularExpressions;
-using System.Threading.Tasks;
+
 
 namespace ReadableUrls
 {
@@ -15,10 +13,10 @@ namespace ReadableUrls
 
         public static IApplicationBuilder UseSefUrls(this IApplicationBuilder builder)
         {
-            return builder.Use(new Func<RequestDelegate, RequestDelegate>(FormatRequest));
+            return builder.Use(new Func<RequestDelegate, RequestDelegate>(MakeRequestReadable));
         }
 
-        private static RequestDelegate FormatRequest(RequestDelegate next)
+        private static RequestDelegate MakeRequestReadable(RequestDelegate next)
         {
             RequestDelegate requestDelegate = (HttpContext ctxt) =>
             {

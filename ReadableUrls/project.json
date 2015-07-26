@@ -8,11 +8,8 @@
 
   "dependencies": {
     "System.Collections": "4.0.10-beta-23019",
-    "System.Linq": "4.0.0-beta-23019",
-    "System.Threading": "4.0.10-beta-23019",
-    "System.Runtime": "4.0.10-beta-23019",
     "Microsoft.CSharp": "4.0.0-beta-23019",
-    "Microsoft.AspNet.Mvc": "6.0.0-beta5",
+    "Microsoft.AspNet.Mvc":  "6.0.0-beta5",
     "Microsoft.AspNet.Mvc.TagHelpers": "6.0.0-beta5",
     "Microsoft.AspNet.Authentication.Cookies": "1.0.0-beta5",
     "Microsoft.AspNet.Authentication.Facebook": "1.0.0-beta5",
@@ -25,10 +22,8 @@
     "Microsoft.AspNet.Server.IIS": "1.0.0-beta5",
     "Microsoft.AspNet.Server.WebListener": "1.0.0-beta5",
     "Microsoft.AspNet.StaticFiles": "1.0.0-beta5",
-    "Microsoft.AspNet.Tooling.Razor": "1.0.0-beta5",
-    "Microsoft.Framework.Configuration.Abstractions": "1.0.0-beta5",
-    "Microsoft.Framework.Configuration.Json": "1.0.0-beta5",
-    "Microsoft.Framework.Configuration.UserSecrets": "1.0.0-beta5"
+    "Microsoft.AspNet.Tooling.Razor": "1.0.0-beta5"
+
   },
 
   "frameworks": {
