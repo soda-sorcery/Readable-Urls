@@ -11,7 +11,7 @@ namespace ReadableUrls
     public static class ReadableUrls
     {        
 
-        public static IApplicationBuilder UseSefUrls(this IApplicationBuilder builder)
+        public static IApplicationBuilder UseReadableUrls(this IApplicationBuilder builder)
         {
             return builder.Use(new Func<RequestDelegate, RequestDelegate>(MakeRequestReadable));
         }
